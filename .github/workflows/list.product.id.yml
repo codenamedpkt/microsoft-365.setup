@@ -9,4 +9,6 @@ jobs:
       - name: 📥 Get Product IDs from Microsoft
         id: get-product-id
         shell: pwsh
-        run: Get-ProductIDs | Format-Table -AutoSize
+        run: |
+          Install-Module -Name PartnerCenter -AllowClobber -Scope AllUsers
+          Get-ProductIDs | Format-Table -AutoSize
