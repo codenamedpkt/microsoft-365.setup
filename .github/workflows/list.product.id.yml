@@ -11,4 +11,4 @@ jobs:
         shell: pwsh
         run: |
           Install-Module -Name PowerShellGet -Force -AllowClobber -Scope AllUsers -Confirm
-          Get-All | Format-Table -AutoSize
+          Get-Command | Format-Table -AutoSize
