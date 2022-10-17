@@ -9,4 +9,4 @@ jobs:
       - name: 📥 Get Product IDs from Microsoft
         id: get-product-id
         shell: pwsh
-        run: Get-MicrosoftProductSku | Format-Table -AutoSize
+        run: Get-Command | Format-Table -AutoSize
