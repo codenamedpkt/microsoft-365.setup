@@ -10,6 +10,6 @@ jobs:
         id: get-product-id
         shell: pwsh
         run: |
-          Install-Module -Name Microsoft.Graph -Force -AllowClobber -Scope AllUsers -Confirm
+          Install-Module -Name Microsoft.Graph -Name PowerShellGet -Force -AllowClobber -Scope AllUsers -Confirm
           Select-MgProfile -Name "beta"
           Get-PartnerProduct -Catalog 'Software','SoftwarePerpetual','SoftwareSubscriptions' | Format-Table -AutoSize
