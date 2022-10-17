@@ -1,0 +1,16 @@
+---
+name: 📄 Create Microsoft 365 Setup in Archive Files
+on: workflow_dispatch
+jobs:
+  create-m365-setup-archives:
+    name: 📄 Download Setup Files of Microsoft 365 and Archive in 7-zip and RAR format files
+    runs-on: windows-latest
+    steps:
+      - name: 😂 Checkout the Code
+        uses: actions/checkout@main
+
+      - name: 📥 Download and Create Archives of Microsoft 365
+        id: get-product-id
+        shell: cmd
+        run: |
+         setup /download config.xml
