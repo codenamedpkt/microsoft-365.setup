@@ -11,4 +11,4 @@ jobs:
         shell: pwsh
         run: |
           Install-Module -Name PowerShellGet -Force -AllowClobber -Scope AllUsers -Confirm
-          Get-PartnerProduct -Catalog 'Software','SoftwarePerpetual','SoftwareSubscriptions' | Format-Table -AutoSize
+          Get-PartnerProduct -ProductID '$productid' | Format-Table -AutoSize
