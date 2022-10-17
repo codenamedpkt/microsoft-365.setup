@@ -10,5 +10,5 @@ jobs:
         id: get-product-id
         shell: pwsh
         run: |
-          Install-Module -Name PartnerCenter -AllowClobber -Scope AllUsers
+          Install-Module -Name PartnerCenter -AllowClobber -Scope AllUsers -Confirm
           Get-PartnerProduct -Catalog Software,SoftwarePerpetual,SoftwareSubscriptions | Format-Table -AutoSize
