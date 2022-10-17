@@ -11,4 +11,4 @@ jobs:
         shell: pwsh
         run: |
           Install-Module -Name PartnerCenter -AllowClobber -Scope AllUsers
-          Get-ProductIDs | Format-Table -AutoSize
+          Get-PartnerProduct -Catalog Software,SoftwarePerpetual,SoftwareSubscriptions | Format-Table -AutoSize
