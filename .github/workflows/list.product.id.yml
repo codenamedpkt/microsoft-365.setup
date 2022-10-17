@@ -1,12 +1,12 @@
 ---
-name: List Current Microsoft Product IDs
+name: 📄 List Current Microsoft Product IDs
 on: workflow_dispatch
 jobs:
   list-microsoft-product-ids:
-    name: List Product IDs from Microsoft
+    name: 📄 List Product IDs from Microsoft
     runs-on: windows-latest
     steps:
-      - name: Get Product IDs from Microsoft
+      - name: 📥 Get Product IDs from Microsoft
         id: get-product-id
         shell: pwsh
         run: Get-ProductSku -ProductId $productId
